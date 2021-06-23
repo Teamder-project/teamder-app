@@ -1,0 +1,22 @@
+version: "3.3"
+
+services:
+    mysql:
+        image: mysql:5.7
+        restart: always
+        environment: 
+            - MYSQL_ROOT_PASSWORD=admin
+        volumes: 
+            - ./teamder-back/db:/docker-entrypoint-initdb.d
+
+    back:
+        depends_on: mysql
+        build : ./teamder-back/
+        ports:
+            - 8080:8080
+
+    front:
+        depends_on: back
+        build: ./teamder-front/
+        ports:
+            - 4200:4200

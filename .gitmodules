@@ -1,0 +1,6 @@
+[submodule "teamder-front"]
+	path = teamder-front
+	url = https://github.com/Teamder-project/teamder-front
+[submodule "teamder-back"]
+	path = teamder-back
+	url = https://github.com/Teamder-project/teamder-back
