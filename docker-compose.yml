@@ -10,13 +10,15 @@ services:
             - ./teamder-back/db:/docker-entrypoint-initdb.d
 
     back:
-        depends_on: mysql
+        depends_on: 
+            - "mysql"
         build : ./teamder-back/
         ports:
             - 8080:8080
 
     front:
-        depends_on: back
+        depends_on: 
+            - "back"
         build: ./teamder-front/
         ports:
             - 4200:4200
