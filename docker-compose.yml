@@ -26,11 +26,12 @@ services:
 
     front:
         build: ./teamder-front/
+        restart: always
         container_name: front
         depends_on:
             - back
         ports:
-            - 4200:4200
+            - 8000:80
 
     adminer:
         image: adminer
