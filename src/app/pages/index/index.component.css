@@ -35,7 +35,9 @@
     .profile-edit {
         text-align: center;
         display: inline-block;
+        margin-top: 100px;
     }
+
     #create {
         margin-top: 5%;
         position: relative;
@@ -70,6 +72,7 @@
     .profile-edit {
         text-align: center;
         display: inline-block;
+        margin-top: 8%;
     }
     #create {
         margin-top: 5%;
