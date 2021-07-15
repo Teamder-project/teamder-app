@@ -3,6 +3,7 @@ Projet qui comprend les submodules du projet Teamder avec les parties front et b
 
 
 ## description
+Vous pouvez swiper des personnes pour 4 jeux et matcher. Discutez avec elles, personnalisez vos profils.
 Pour plus de renseignement, lire les README.me des submodules
 
 ## prérequis
